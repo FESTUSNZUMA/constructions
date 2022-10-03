@@ -1,0 +1,357 @@
+*{
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;border:none;
+}
+:root {
+  --yellow:#f5bf23;
+  --black:#111;
+  --white:#fff;
+  --light-color:#666;
+  --light-bg:#eee;
+  --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+  --border:.1rem solid rgba(0,0,0,.3);
+}
+section {
+  padding: 10px 10px;
+}
+.header {
+	display: flex;
+	align-items: center;
+	position: sticky;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 20px 15px;
+justify-content: space-around;
+  background:#fff;
+  z-index: 1;
+  box-shadow: var(--box-shadow);
+}
+.header .logo {
+  font-size: 1.5rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+
+.header .logo span {
+  color: var(--yellow);
+}
+.header .navbar a {
+  font-size: 1rem;
+  color: var(--black);
+  text-transform: capitalize;
+  margin: 0 1rem;
+  text-decoration: none;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.header .navbar a:hover {
+  color: var(--yellow);
+}
+.header .icons div {
+  height: 2rem;
+  width: 2rem;
+  line-height: 2rem;
+  font-size: 2rem;
+  background: var(--light-bg);
+  color: var(--black);
+  cursor: pointer;
+  text-align: center;
+  margin-left: .3rem;
+  background-color: transparent;
+  transition: all 0.3s ease-in;
+}
+
+.header .icons div:hover {
+  background: var(--black);
+  color: var(--white);
+}
+
+.header #menu-btn {
+  display: none;
+}
+.home {
+  padding: 10px 0px;
+}
+.home-slider{
+	display: flex;
+	align-items: center;
+	overflow-x: hidden;
+
+
+}
+.slider {
+	display: flex;
+	align-items: center;
+}
+
+.home .slide {
+	min-width: 100%;
+  height: 80vh;
+  background-size: cover !important;
+  background-position: center !important;
+   background-repeat: no-repeat;
+  background-color: #cccccc;
+  transition: transform 0.9s ease-in-out;
+}
+
+
+
+
+.home .slide .content {
+		margin: 10px 0px;
+  width: 55%;
+  padding: 100px 30px;
+}
+.slide .content a {
+	display: block;
+	width: 130px;
+	margin-top: 20px;
+	text-decoration: none;
+	padding: 10px 14px;
+	background-color:black;
+	color: #fff;
+
+}
+
+.home .slide .content  p{
+	text-align: left;
+}
+.about {
+	width: 100%;
+}
+.about h1 {
+	margin-top: 10px;
+	text-align: center;
+	position: relative;
+}
+.about h1::after {
+	content: "";
+	background-color: black;
+	width: 50px;
+	height: 2px;
+	position: absolute;
+	bottom: 0;
+	left:48%;
+}
+.about .row {
+	margin-top: 10px;
+	padding:5px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.about .row .video {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 41rem;
+          flex: 1;
+}
+
+.about .row .video video {
+  width: 100%;
+}
+
+.about .row .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 41rem;
+          flex: 1;
+}
+
+.about .row .content h3 {
+  font-size: 3.5rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+
+.about .row .content p {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  line-height: 2;
+  padding: 1rem 0;
+}
+
+.about .box-container {
+  margin-top: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 2rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.about .box-container .box {
+  text-align: center;
+  background: var(--light-bg);
+  padding: 3rem 2rem;
+  cursor: pointer;
+}
+
+.about .box-container .box h3 {
+  font-size: 4rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+
+.about .box-container .box p {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  line-height: 2;
+  padding-top: .5rem;
+}
+.services{
+	background: var(--light-bg);
+	width: 100%;
+	padding: 30px 0px;
+font-family: 'Times New Roman', serif;
+   font-weight: 500;
+
+}
+.services h1{
+	text-align: center;
+	position: relative;
+	text-transform: capitalize;
+}
+.services h1::after{
+	content: "";
+	position: absolute;
+	width: 100px;
+	height: 3px;
+	border-radius: 1px;
+	bottom:0;
+	left: 46%;
+
+	background-color: black;
+
+}
+.services .box-container{
+display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 4px;
+}
+.services .box-container .box{
+	margin: 20px 3px;
+	
+	transition: all 0.3s ease-in;
+	background-color: #fff;
+	box-shadow: var(--box-shadow);
+	border:var(--border);
+
+}
+.services .box-container .box img{
+	width: 100%;
+	height: 200px;
+	object-fit: contain;
+	cursor: pointer;
+}
+.services .box-container .box:hover{
+	transform: translateY(-20px);
+}
+.services .box-container .box h3{
+	text-transform: capitalize;
+	padding: 1rem;
+
+}
+.services .box-container .box h3,p{
+	text-align: center;
+	padding: 10px;
+}
+.projects {
+  background: var(--black);
+}
+
+.projects .heading {
+  color: var(--white);
+}
+
+.projects .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+
+.projects .box-container .box {
+  cursor: initial;
+}
+
+.projects .box-container .box:hover .image img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.projects .box-container .box .image {
+  height: 40rem;
+  overflow: hidden;
+}
+
+.projects .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.projects .box-container .box .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: var(--white);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projects .box-container .box .content .info {
+  padding: 1rem 2rem;
+}
+
+.projects .box-container .box .content .info h3 {
+  font-size: 1.7rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+
+.projects .box-container .box .content .info p {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  line-height: 2;
+}
+
+.projects .box-container .box .content i {
+  width: 7.5rem;
+  font-size: 3rem;
+  background: var(--yellow);
+  color: var(--white);
+  cursor: pointer;
+  text-align: center;
+  line-height: 7.5rem;
+}
+
+@media (max-width: 400px) {
+	
+}
+
+@media (max-width: 700px) {
+.services .box-container{
+	grid-template-columns: auto auto ;
+}
+
+
